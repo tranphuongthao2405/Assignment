@@ -1,0 +1,121 @@
+body {
+  height: 100vh;
+  overflow: hidden;
+  margin: 0 auto;
+  background-image: url("background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Courier", "monospace";
+  font-weight: 500;
+}
+
+.startBox {
+  width: fit-content;
+  height: fit-content;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
+}
+
+.startBox #confirmButton {
+  width: fit-content;
+  color: #fff;
+  text-decoration: none;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+#confirmModal,
+#confessModal {
+  display: none;
+  width: 300px;
+  height: fit-content;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.modalContent {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 15px;
+  border: 1px solid #888;
+  border-radius: 10px;
+  width: 100%;
+  color: #333;
+}
+
+.modalContent p {
+  text-align: center;
+  margin: 10px 0 10px 0;
+}
+
+.choice {
+  display: flex;
+  justify-content: space-between;
+}
+
+#okayButton,
+#acceptButton {
+  padding: 5px;
+  border: 1px solid #888;
+  border-radius: 5px;
+}
+
+#declineButton,
+#refuseButton {
+  padding: 5px;
+  border: 1px solid #888;
+  border-radius: 5px;
+}
+
+#declineButton:hover,
+#declineButton:focus,
+#refuseButton:hover,
+#refuseButton:focus {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#okayButton:hover,
+#okayButton:focus,
+#acceptButton:hover,
+#acceptButton:focus {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.imageContainer {
+  display: none;
+  width: fit-content;
+  height: fit-content;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  color: #fff;
+}
+
+.imageContainer #cuteImage {
+  width: 350px;
+  height: 300px;
+  margin: 20px;
+}
+
+.imageContainer p {
+  font-size: 24px;
+  font-weight: 500;
+}
