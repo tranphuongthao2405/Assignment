@@ -24,10 +24,12 @@ const minutes =
 const time = `${hour}:${minutes}`;
 timeText.innerHTML = `Chính xác bây giờ là ${time}`;
 
-confirmButton.addEventListener("click", (e) => {
+startBox.addEventListener("click", (e) => {
   e.preventDefault();
-  startBox.style.display = "none";
-  confirmModal.style.display = "block";
+  if (e.target.id === "confirmButton") {
+    startBox.style.display = "none";
+    confirmModal.style.display = "block";
+  }
 });
 
 okayButton.addEventListener("click", (e) => {
