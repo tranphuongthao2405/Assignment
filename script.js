@@ -12,7 +12,7 @@ const imageContainer = document.getElementsByClassName("imageContainer")[0];
 const cuteImage = document.getElementById("cuteImage");
 
 const date = new Date().toLocaleDateString();
-dateText.innerHTML = `Chào cậu, hôm nay là ngày ${date}`;
+dateText.innerHTML = `Chào bé, hôm nay là ngày ${date}`;
 const hour =
   new Date().getHours() < 10
     ? `0${new Date().getHours()}`
